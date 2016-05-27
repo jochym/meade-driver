@@ -1761,6 +1761,10 @@ static const struct usb_device_id acm_ids[] = {
 	.driver_info = CLEAR_HALT_CONDITIONS,
 	},
 
+	{ USB_DEVICE(0x04cc, 0x0000), /* Meade LS telescope */
+	.driver_info = NO_UNION_NORMAL,
+	},
+
 	/* Nokia S60 phones expose two ACM channels. The first is
 	 * a modem and is picked up by the standard AT-command
 	 * information below. The second is 'vendor-specific' but
